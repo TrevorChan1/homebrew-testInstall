@@ -12,11 +12,7 @@ class Testinstall < Formula
   depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+
     # system "cmake", ".", *std_cmake_args
     system "make", "install"
     bin.install "bin/local/testInstall"
