@@ -13,7 +13,7 @@ class Testinstall < Formula
 
   def install
 
-    "/usr/local/PEMicro".install Dir["cycloneControl/*"]
+    prefix.install Dir["cycloneControl/*"]
   
   end
 
