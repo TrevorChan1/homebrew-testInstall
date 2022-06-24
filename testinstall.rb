@@ -13,13 +13,12 @@ class Testinstall < Formula
 
   def install
     # ENV.deparallelize
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules"
 
-    # system "cmake", ".", *std_cmake_args
-    system "make", "install"
-    bin.install "bin/local/testInstall"
+    bin.install "LICENSE.txt"
+    bin.install "api_example.py"
+    bin.install "cycloneControlSDK.py"
+    bin.install "cycloneControlSDKConstants.py"
+  
   end
 
   #test do
