@@ -13,10 +13,7 @@ class Testinstall < Formula
 
   def install
 
-    bin.install "cycloneControl/LICENSE.txt"
-    bin.install "cycloneControl/api_example.py"
-    bin.install "cycloneControl/cycloneControlSDK.py"
-    bin.install "cycloneControl/cycloneControlSDKConstants.py"
+    bin.install "cycloneControl"
   
   end
 
