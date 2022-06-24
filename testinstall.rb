@@ -5,7 +5,7 @@ class Testinstall < Formula
   desc "Testing installer for cycloneControlSDK_python"
   homepage "https://www.pemicro.com/"
   url "https://github.com/TrevorChan1/testInstall/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "491a3b70801fdf7eaeca1862045b81a3ceec4d5f330cad0191a617083ff49a88"
+  sha256 "d07d8a1a7ff08f060608a315befec836c8253b745ecd0712bd5c95e793798142"
   license "BSD-3-Clause"
   version "1.0.1"
 
