@@ -9,10 +9,16 @@ class Testinstall < Formula
   license "BSD-3-Clause"
   version "1.0.1"
 
-  # depends_on "cmake" => :build
+  depends_on "cmake" => :build
 
   def install
-    system "make", "build"
+    # ENV.deparallelize
+    system "./configure", "--disable-debug",
+                          "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
+    # system "cmake", ".", *std_cmake_args
+    system "make", "install"
   end
 
   #test do
