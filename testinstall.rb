@@ -4,7 +4,7 @@
 class Testinstall < Formula
   desc "Testing installer for cycloneControlSDK_python"
   homepage "https://www.pemicro.com/"
-  url "https://github.com/TrevorChan1/testInstall/archive/refs/tags/v1.0.1.tar.gz"
+  url "https://github.com/TrevorChan1/testInstall/archive/refs/tags/v1.0.2.tar.gz"
   sha256 "d07d8a1a7ff08f060608a315befec836c8253b745ecd0712bd5c95e793798142"
   license "BSD-3-Clause"
   version "1.0.1"
@@ -13,11 +13,7 @@ class Testinstall < Formula
 
   def install
     # ENV.deparallelize
-    Dir.mkdir '/home/linuxbrew/.linuxbrew/bin/PEMicro/cycloneControl'
-    bin.install "PEMicro/cycloneControl/LICENSE.txt"
-    bin.install "PEMicro/cycloneControl/api_example.py"
-    bin.install "PEMicro/cycloneControl/cycloneControlSDK.py"
-    bin.install "PEMicro/cycloneControl/cycloneControlSDKConstants.py"
+    bin.install "cycloneControl"
   
   end
 
