@@ -15,7 +15,7 @@ class Testinstall < Formula
     # ENV.deparallelize
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
-                          "--disable-silent-rules",
+                          "--disable-silent-rules"
 
     # system "cmake", ".", *std_cmake_args
     system "make", "install"
