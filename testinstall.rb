@@ -19,6 +19,7 @@ class Testinstall < Formula
                           "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     system "make", "install"
+    bin.install "bin/local/testInstall"
   end
 
   #test do
