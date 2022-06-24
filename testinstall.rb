@@ -13,7 +13,7 @@ class Testinstall < Formula
 
   def install
     # ENV.deparallelize
-
+    Dir.mkdir '/home/linuxbrew/.linuxbrew/bin/PEMicro/cycloneControl'
     bin.install "PEMicro/cycloneControl/LICENSE.txt"
     bin.install "PEMicro/cycloneControl/api_example.py"
     bin.install "PEMicro/cycloneControl/cycloneControlSDK.py"
