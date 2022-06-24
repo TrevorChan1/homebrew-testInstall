@@ -12,7 +12,7 @@ class Testinstall < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install "testInstall"
+    system "make", "build"
   end
 
   #test do
