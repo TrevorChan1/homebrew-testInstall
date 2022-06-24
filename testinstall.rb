@@ -12,8 +12,11 @@ class Testinstall < Formula
   depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize
-    bin.install "cycloneControl"
+
+    bin.install "cycloneControl/LICENSE.txt"
+    bin.install "cycloneControl/api_example.py"
+    bin.install "cycloneControl/cycloneControlSDK.py"
+    bin.install "cycloneControl/cycloneControlSDKConstants.py"
   
   end
 
