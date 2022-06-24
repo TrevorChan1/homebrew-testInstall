@@ -14,10 +14,10 @@ class Testinstall < Formula
   def install
     # ENV.deparallelize
 
-    bin.install "LICENSE.txt"
-    bin.install "api_example.py"
-    bin.install "cycloneControlSDK.py"
-    bin.install "cycloneControlSDKConstants.py"
+    bin.install "PEMicro/cycloneControl/LICENSE.txt"
+    bin.install "PEMicro/cycloneControl/api_example.py"
+    bin.install "PEMicro/cycloneControl/cycloneControlSDK.py"
+    bin.install "PEMicro/cycloneControl/cycloneControlSDKConstants.py"
   
   end
 
