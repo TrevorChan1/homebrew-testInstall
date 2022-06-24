@@ -13,7 +13,7 @@ class Testinstall < Formula
 
   def install
 
-    bin.install Dir["cycloneControl/*"]
+    prefix.install Dir["cycloneControl/*"]
   
   end
 
