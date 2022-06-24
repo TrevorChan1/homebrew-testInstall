@@ -14,7 +14,7 @@ class Testinstall < Formula
   def install
 
     # system "cmake", ".", *std_cmake_args
-    system "make", "install"
+    system "make", "build"
     bin.install "bin/local/testInstall"
   end
 
